@@ -1,0 +1,629 @@
+/* = PART I: ===================== STYLE PAR DEFAUT ==========================  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: url(img/Fumé.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  padding-bottom: 10px;
+}
+
+nav {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  width: 110px;
+  height: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 1px;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding: 7px 13px;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  color: #3cb149;
+  transition: 0.5s;
+}
+
+.contact-entete {
+  border: 1px solid none;
+  border-radius: 20px;
+  background-color: red;
+  color: #fff;
+  /*  padding: 7px 13px; */
+  padding: 0.05px 0.05px;
+  text-align: center;
+  font-size: bold;
+  display: inline-block;
+}
+
+.bouton-menu {
+  font-size: 1.5rem;
+  color: #fff;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#acocher {
+  display: none;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-top: 10%;
+  gap: 20px;
+}
+
+.contact-presentation > a,
+.contact-apropos > a,
+.rappel-partiedroite > a {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.contact-presentation {
+  box-sizing: border-box;
+  border: 0.5px solid none;
+  font-size: 10px;
+  border-radius: 10%;
+  background-color: rgba(255, 0, 0, 0.466);
+  text-align: center;
+  padding: 1%;
+  width: 14%;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+.contact-presentation:hover,
+.contact-apropos:hover {
+  box-sizing: border-box;
+  border: 2px solid aquamarine;
+  background-color: #3cb149;
+  transition-duration: 1.5s;
+}
+
+/*======================= Section A propos =================*/
+.section-apropos {
+  background-color: white;
+  display: flex;
+  /*  height: 300px;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9%;
+  margin-bottom: 9%;
+  gap: 4px;
+  font-size: 0.833rem;
+}
+
+.section-apropos h1 {
+  font-size: 15px;
+}
+
+.contact-apropos {
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  border: 0.5px solid none;
+  border-radius: 17%;
+  background-color: #f50505e7; rgba(245, 5, 5, 0.904);
+  text-align: center;
+  margin-top: 2%;
+  width: 9%;
+  cursor: pointer;
+  transition-duration: 1.5s;
+  padding: 0.78%;
+}
+
+/*============================ Section Parcours ============================*/
+.section-parcours {
+  background-image: url("img/pmudassir.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-parcours > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+}
+
+.text-boite-interne {
+  color: rgba(126, 10, 10, 0.993);
+}
+
+.boite-parcours {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1%;
+  margin: 1.2%;
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: gray;
+  font-size: small;
+}
+
+.icon-parcours {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#mon-image {
+  border: 1 solid;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+/*================== Section Blog ======================*/
+.section-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.boite-blog {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  gap: 20px;
+}
+
+.boite-blog > div {
+  box-sizing: border-box;
+  border: 0.5px solid rgba(189, 181, 181, 0.144);
+  width: 70%;
+  text-align: start;
+  padding-inline: 5%;
+  padding-bottom: 10%;
+}
+
+.image-blog {
+  width: 220px;
+  margin-bottom: 10%;
+}
+
+.titre-blog {
+  color: rgba(3, 1, 1, 0.678);
+  margin-bottom: 10%;
+}
+
+.text-paragraphe-blog {
+  color: gray;
+  font-size: small;
+  margin-bottom: 10%;
+}
+
+.ensavoir-blog {
+  box-sizing: border-box;
+  border: 0.5px solid none;
+  font-size: 0.65rem;
+  border-radius: 10%;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 3%;
+  margin-top: 2%;
+  width: 20%;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+/*--------------------------- Section Rappel Contact -------------------------------*/
+.rappel-contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: #c0f6ca;
+  padding: 3%;
+}
+
+.rappel-partiedroite {
+  box-sizing: border-box;
+  border: 0.5px solid none;
+  font-size: 0.65rem;
+  font-weight: bold;
+  border-radius: 10%;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+.ensavoir-blog:hover,
+.rappel-partiedroite:hover {
+  box-sizing: border-box;
+  border: 2px solid none;
+  background-color: rgba(189, 69, 189, 0.897);
+  transition-duration: 1.5s;
+  color: white;
+  font-size: small;
+}
+
+/*--------------------------- Section Footer -------------------------------*/
+footer {
+  background-color: rgb(144, 144, 209);
+  padding: 3%;
+}
+
+.piedpage-haut {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.piedpage-haut ul li a {
+  color: #ffffff;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.piedpage-haut ul li {
+  line-height: 30px;
+  margin: 1px;
+  list-style: none;
+  font-size: 20%;
+}
+
+.piedpage-bas {
+  padding-top: 5%;
+  font-size: 0.9rem;
+  text-align: center;
+}
+/*============================================================================*/
+/*=============================================================================*/
+
+/* PART II: ===================== RESPONSIVE DESIGN ==========================  */
+
+/* Style pour les Smartphones: 767 - 320px */
+@media (min-width: 320px) and (max-width: 767px) {
+  #logo {
+    width: 80px;
+  }
+
+  .mylogo {
+    padding-left: 15px;
+  }
+
+  .bouton-menu {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #3cb149;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  #acocher:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .presentation {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 15px;
+  }
+
+  .contact-presentation {
+    box-sizing: border-box;
+    border: 0.5px solid none;
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: rgba(255, 0, 0, 0.466);
+    text-align: center;
+    padding: 4%;
+    margin-top: 2%;
+    width: 35%;
+    cursor: pointer;
+    transition-duration: 1.5s;
+  }
+
+  .contact-presentation:hover,
+  .contact-apropos:hover {
+    box-sizing: border-box;
+    border: 2px solid aquamarine;
+    background-color: #3cb149;
+    transition-duration: 1.5s;
+  }
+
+  /*======================= Section A propos =================*/
+  .section-apropos {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    gap: 4px;
+    font-size: 0.633rem;
+  }
+
+  .section-apropos h1 {
+    font-size: 12px;
+  }
+  .section-apropos h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contact-apropos {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    border: 0.5px solid none;
+    border-radius: 17%;
+    background-color: rgba(245, 5, 5, 0.904);
+    text-align: center;
+    margin-top: 2%;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 1.5s;
+    padding: 1%;
+  }
+
+  /*============================ Section Parcours ============================*/
+  .section-parcours {
+    background-image: url("img/pmudassir.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section-parcours > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+  }
+
+  .text-boite-interne {
+    color: rgba(126, 10, 10, 0.993);
+  }
+
+  .boite-parcours {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 1%;
+    margin: 1.2%;
+    width: 70%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: gray;
+    font-size: small;
+  }
+
+  .icon-parcours {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  #mon-image {
+    border: 1 solid;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+
+  /*================== Section Blog ======================*/
+  .section-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .boite-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    gap: 30px;
+  }
+
+  .boite-blog > div {
+    box-sizing: border-box;
+    border: 0.6px solid rgba(189, 181, 181, 0.144);
+    width: 235px;
+    text-align: start;
+    padding-bottom: 10%;
+  }
+
+  .image-blog {
+    width: 220px;
+    margin-bottom: 10%;
+  }
+
+  .titre-blog {
+    color: rgba(3, 1, 1, 0.678);
+    margin-bottom: 10%;
+    font-size: 1rem;
+    width: 35px;
+  }
+
+  .text-paragraphe-blog {
+    color: gray;
+    font-size: small;
+    margin-bottom: 10%;
+  }
+
+  .ensavoir-blog {
+    box-sizing: border-box;
+    border: 0.5px solid none;
+    font-size: 0.65rem;
+    border-radius: 10%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 3%;
+    margin-top: 2%;
+    width: 20%;
+    cursor: pointer;
+    transition-duration: 1.5s;
+  }
+
+  /*--------------------------- Section Rappel Contact -------------------------------*/
+  .rappel-contact {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c0f6ca;
+    padding: 5%;
+  }
+
+  .rappel-contact > div > h2 {
+    font-size: large;
+  }
+
+  .rappel-partiedroite {
+    box-sizing: border-box;
+    border: 0.5px solid none;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
+    transition-duration: 1.5s;
+  }
+
+  .ensavoir-blog:hover,
+  .rappel-partiedroite:hover {
+    box-sizing: border-box;
+    border: 2px solid none;
+    background-color: rgba(189, 69, 189, 0.897);
+    transition-duration: 1.5s;
+    color: white;
+    font-size: small;
+  }
+
+  /*---------------- Footer -----------------------*/
+  footer {
+    background-color: rgb(144, 144, 209);
+    padding: 8%;
+  }
+
+  .list_pieddpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .piedpage-bas {
+    padding-top: 5%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  /*-----------------------------------------------------------*/
+}

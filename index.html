@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <!--Liaison de la feuille de style externe de la de la bibliothèque
+    de polices et d'icônes  de Font Awesome => ex : pour le « menu burger » -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Projet Web Portfolio</title>
+  </head>
+
+  <body>
+    <!--L'entête de la page-->
+    <header>
+      <nav>
+        <input type="checkbox" id="acocher" />
+        <label for="acocher" class="bouton-menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="mylogo">
+          <a href="#"> <img src="img/logoHarlowvert.png" alt="" id="logo" /></a>
+        </label>
+
+        <ul class="bar-navigation">
+          <li><a href="home" class="active">Accueil</a></li>
+          <li><a href="about">A propos</a></li>
+          <li><a href="project">Projets</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="contact" class="contact-entete">CONTACT</a></li>
+        </ul>
+        <div class="presentation">
+          <h1 class="titre-presentation">
+            Hello, je suis Racine <br />
+            Concepteur Développeur d'Application AI
+          </h1>
+          <div class="contact-presentation"><a href="#">CONTACTEZ MOI</a></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!----------------------- Section A propos----------------------------------->
+      <section class="section-apropos">
+        <h1>A propos de Moi</h1>
+        <br />
+        <h2>"Lorem ipsum dolor sit amet consectetur adipisicing elit !"</h2>
+        <div class="contact-apropos"><a href="#">Apprendre Plus</a></div>
+      </section>
+
+      <!----------------------- Section Parcours ----------------------------------->
+      <section class="section-parcours">
+        <div class="text-boite-interne">
+          <h1>Mon Parcours</h1>
+          <div class="boite-parcours">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              <br />
+              debitis possimus illo facilis. Accusantium nemo, perspiciatis
+              illum
+            </p>
+            <div class="icon-parcours">
+              <img src="img/Racine.jpg" alt="" id="mon-image" />
+              <h6>
+                Racine Diatta <br />
+                AI enginer
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Section Blog ----------------------------------->
+
+      <section class="section-blog">
+        <h1>Dernière Article du Blog</h1>
+        <div class="boite-blog">
+          <div>
+            <img src="img/imageBlog1.png" alt="" class="image-blog" />
+            <h2 class="titre-blog">Titre Aticle ....</h2>
+            <p class="text-paragraphe-blog">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              ab, hic dicta sed ducimus dolor delectus. Consectetur illo
+              voluptates labore amet impedit enim, aspernatur ea nemo recusandae
+              sapiente dolorem! Unde...
+            </p>
+            <a href="#" class="ensavoir-blog">En savoir Plus</a>
+          </div>
+          <div>
+            <img src="img/imageBlog1.png" alt="" class="image-blog" />
+            <h2 class="titre-blog">Titre Aticle ....</h2>
+            <p class="text-paragraphe-blog">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              ab, hic dicta sed ducimus dolor delectus. Consectetur illo
+              voluptates labore amet impedit enim, aspernatur ea nemo recusandae
+              sapiente dolorem! Unde...
+            </p>
+            <a href="#" class="ensavoir-blog">En savoir Plus</a>
+          </div>
+          <div>
+            <img src="img/imageBlog1.png" alt="" class="image-blog" />
+            <h2 class="titre-blog">Titre Aticle ....</h2>
+            <p class="text-paragraphe-blog">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              ab, hic dicta sed ducimus dolor delectus. Consectetur illo
+              voluptates labore amet impedit enim, aspernatur ea nemo recusandae
+              sapiente dolorem! Unde...
+            </p>
+            <a href="#" class="ensavoir-blog">En savoir Plus</a>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Section Rappel Contact ------------------------------->
+      <section class="rappel-contact">
+        <div class="rappel-partiegauche">
+          <h2>Restons en Contact</h2>
+        </div>
+        <div class="rappel-partiedroite">
+          <a href="#" class="assi"> Contactez Moi</a>
+        </div>
+      </section>
+
+      <!----------------------- Section Footer ------------------------------->
+      <footer>
+        <div class="piedpage-haut">
+          <div class="list_pieddpage">
+            <p><b>Site de Navigation</b></p>
+            <ul>
+              <li><a href="homeFoot">Accueil</a></li>
+              <li><a href="aboutFoot">A propos</a></li>
+              <li><a href="projectFoot">Projets</a></li>
+              <li><a href="blogFoot">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="piedpage-bas">
+          <p>Copyright © 2024 Racine D</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
